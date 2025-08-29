@@ -4,10 +4,10 @@ const app = express();
 
 app.use(express.json());
 
-const FULL_NAME = process.env.FULL_NAME || 'john doe'; 
-const DOB = process.env.DOB || '17091999';            
-const EMAIL = process.env.EMAIL || 'john@xyz.com';
-const ROLL_NUMBER = process.env.ROLL_NUMBER || 'ABCD123';
+const FULL_NAME = process.env.FULL_NAME || 'N.Chandu Prakash Reddy'; 
+const DOB = process.env.DOB || '27102002';            
+const EMAIL = process.env.EMAIL || 'chandupersonal0@gmail.com';
+const ROLL_NUMBER = process.env.ROLL_NUMBER || '22BCE20415';
 
 function buildUserId(fullName, dob) {
   const clean = String(fullName).trim().toLowerCase().replace(/\s+/g, '_');
